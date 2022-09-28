@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.debug{
+  border: 1px solid red;
+  background-color: bisque;
+}
+
+.debug2{
+  border: 1px solid red;
+  background-color: rgb(252, 198, 132);
+}
+
+/* pantoni */
+
+.pantone1{
+  background-color: #000000;
+}
+.pantone2{
+  background-color: #282828;
+}
+.pantone3{
+  background-color: #141922;
+}
+
+/* barra laterale spotify */
+
+#quickbar{
+  height: 80vh;
+  width: 15%;
+  padding: ;
+}
+
+/* header */
+
+header{
+  height: 15vh;
+  width: 85%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.head{
+  height: 60%;
+  text-align: end;
+}
+
+.menu{
+  height: 40%;
+  display: flex;
+  text-align: center;
+}
+
+/* main */
+
+main{
+  height: 100vh;
+  width: 85%;
+  position: absolute;
+  right: 0;
+  top: 15vh;
+}
+
+/* footer */
+
+footer{
+  height: 20vh;
+  width: 100%;
+  z-index: 99;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
