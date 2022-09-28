@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 .debug{
   border: 1px solid red;
   background-color: bisque;
@@ -16,6 +12,17 @@ html{
 .debug2{
   border: 1px solid red;
   background-color: rgb(252, 198, 132);
+}
+
+/* font condivisi */
+
+body{
+  font-family: 'Fredoka One', cursive;
+}
+
+h2{
+  padding: 10px;
+  color: white;
 }
 
 /* pantoni */
@@ -35,7 +42,11 @@ html{
 #quickbar{
   height: 80vh;
   width: 15%;
-  padding: ;
+  padding:20px;
+}
+
+.contain{
+  height: 100%;
 }
 
 /* header */
@@ -63,11 +74,27 @@ header{
 /* main */
 
 main{
-  height: 100vh;
+  padding: 16vh 20px;
+  overflow:scroll;
+  height: 110vh;
   width: 85%;
   position: absolute;
   right: 0;
-  top: 15vh;
+  top: 0;
+}
+
+.container{
+  height: 100%;
+}
+
+.contain{
+  display: flex;
+}
+
+.card{
+  padding: 20px;
+  height: 230px;
+  width: (100% / 6);
 }
 
 /* footer */
@@ -75,6 +102,7 @@ main{
 footer{
   height: 20vh;
   width: 100%;
+  position: fixed;
   z-index: 99;
 }
 
