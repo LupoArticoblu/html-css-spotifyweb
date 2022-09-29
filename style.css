@@ -25,6 +25,10 @@ h2,H3{
   color: white;
 }
 
+ul{
+  list-style: none;
+}
+
 /* pantoni */
 
 .pantone1{
@@ -36,6 +40,10 @@ h2,H3{
 .pantone3{
   background-color: #141922;
 }
+.pantone4{
+  background-color: #00000036;
+}
+
 
 /* barra laterale spotify all'interno di main */
 
@@ -105,7 +113,11 @@ button{
 /* header */
 
 header{
-  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 18px;
+  height: 10vh;
   width: 85%;
   position: fixed;
   top: 0;
@@ -115,25 +127,34 @@ header{
 }
 
 .head{
+  width: 20%;
+  line-height: 50px;
   height: 60%;
-  text-align: end;
+  text-align: center;
+  border-radius: 50px;
+  border:3px solid aliceblue;
+  color: aliceblue;
 }
 
-.menu{
-  height: 40%;
-  display: flex;
-  text-align: center;
+.head span{
+  display: block;
 }
+
 
 /* main */
 
 .container{
   height: 100%;
-  margin-top: 15vh;
+  margin-top: 10vh;
   margin-left: 15%;
   width: 85%;
 }
 
+.menu{
+  height: 5vh;
+  display: flex;
+  text-align: center;
+}
 .contain1,
 .contain2,
 .contain3{
