@@ -190,8 +190,7 @@ header{
 }
 
 .card .image{
-  width: 155px;
-  height: 155px;
+  width: 100%;
   margin: 0 auto;
 }
 
