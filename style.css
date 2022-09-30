@@ -359,3 +359,32 @@ footer{
 } */
 
 /************** SEZIONE HOVER*************/
+
+.head:hover{
+  border-color: greenyellow;
+  color: yellowgreen;
+  font-size: large;
+  width: 256px;
+  height: 60px;
+  line-height: 55px;
+}
+
+ul li:hover{
+  color: aliceblue;
+}
+
+.home:hover img,
+.cerca:hover img,
+.libreria:hover img{
+  filter: invert(0);
+}
+
+.home:hover span,
+.cerca:hover span,
+.libreria:hover span{
+  color: aliceblue
+};
+
+.app:hover span{
+  color: aliceblue;
+}  
