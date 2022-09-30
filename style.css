@@ -95,8 +95,9 @@ button{
   width: 50px;
 }
 
-.crea{
-  
+#list{
+  overflow: auto;
+  min-height: 270px;
 }
 
 .contain ul{
@@ -166,6 +167,7 @@ header{
   text-align: center;
 }
 .menu ul{
+  overflow: hidden;
   display: flex;
   justify-content: center;
   line-height: 50px;
@@ -192,14 +194,25 @@ header{
 }
 
 .card .image{
-  width: 100%;
-  height: 70%;
-  margin-bottom: 10%;
+  width: 155px;
+  height: 155px;
+  margin: 0 auto;
 }
 
-.image img{
-  width: 90%;
+.card .round{
+  width: 155px;
+  height: 155px;
+  margin: 0 auto;
 }
+
+.round img{border-radius: 50%;}
+
+.image img,
+.round img{
+  width: 100%;
+  height: 100%;
+}
+
 
 .card .text{
   padding: 10px;
