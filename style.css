@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 /* font condivisi */
 
@@ -104,8 +107,7 @@ button{
 
 .app{
   font-size: small;
-  padding-bottom: 20px;
-  height: 2vh;
+  padding-bottom: 2px;
   border-bottom: 1px solid gray;
   color: gray;
 }
@@ -150,7 +152,6 @@ header{
 /* main */
 
 .container{
-  height: 85vh;
   padding-top: 10vh;
   width: 85%;
   overflow: scroll;
@@ -158,10 +159,10 @@ header{
 }
 
 .menu{
-  height: 5vh;
   text-align: center;
 }
 .menu ul{
+  flex-wrap: wrap;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -184,7 +185,6 @@ header{
   text-align: center;
   align-items: center;
   padding: 20px;
-  height: 230px;
   min-width: 175px;
   width: calc(100% / 6);
 }
@@ -224,8 +224,8 @@ header{
   color: gray;
 }
 
-.btn .crea{
-  display: inline;
+.btn button{
+ background-color: rgb(181, 181, 204);
 }
 
 /* MAI USARE UN TAG PER APPLICARVI DEGLI ELEMENTI! */
@@ -332,6 +332,8 @@ footer{
   background-color: aliceblue;
   height: 4px;
   width: 100px;
+  display: flex;
+  justify-content: end;
 }
 
 .display .sound-bar{
@@ -342,6 +344,8 @@ footer{
   width: 150px;
 }
 .display .sound-bar div{
+  display: flex;
+  justify-content: end;
   border-radius: 30px;
   background-color: aliceblue;
   height: 2px;
@@ -361,30 +365,96 @@ footer{
 /************** SEZIONE HOVER*************/
 
 .head:hover{
-  border-color: greenyellow;
-  color: yellowgreen;
+  border-color:  rgb(75, 216, 93);
+  color:  rgb(75, 216, 93);
   font-size: large;
   width: 256px;
   height: 60px;
   line-height: 55px;
+  cursor: pointer;
 }
 
 ul li:hover{
   color: aliceblue;
+  cursor: pointer;
 }
 
 .home:hover img,
 .cerca:hover img,
 .libreria:hover img{
   filter: invert(0);
+  cursor: pointer;
 }
 
 .home:hover span,
 .cerca:hover span,
 .libreria:hover span{
-  color: aliceblue
-};
-
-.app:hover span{
   color: aliceblue;
+  cursor: pointer;
+}
+
+.preferiti:hover i{
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.low-text > span:hover{
+  color: aliceblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.app:hover .a{
+  color: aliceblue;
+  cursor: pointer;
 }  
+
+.btn:hover{
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.btn:hover i{
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.media i:hover{
+  color: rgb(75, 216, 93);
+  cursor: pointer;
+}
+
+.fa-play:hover{
+  font-size: 32px;
+  line-height: 50%;
+}
+
+.av-bar:hover div{
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.avanzamento:hover .point{
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+
+.sound-bar:hover div{
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+.display:hover .poin{
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-top: -4px;
+}
+
+.card:hover img{
+  opacity: 60%;
+}
