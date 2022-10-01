@@ -47,6 +47,7 @@ ul{
   width: 15%;
   min-width: 180px;
   padding:20px;
+  z-index: 100;
 }
 
 .contain{
@@ -214,8 +215,7 @@ header{
 }
 
 .card .round{
-  width: 155px;
-  height: 155px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -264,12 +264,13 @@ main{
 
 footer{
   padding: 20px;
-  height: 15vh;
+  height: 140px;
   width: 100%;
+  z-index: 101;
 }
 
 .foot{
-  min-height: 10vh;
+  min-height: 50%;
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
@@ -317,7 +318,7 @@ footer{
 .status .media,
 .status .avanzamento{
   height: 50%;
-  width: 500px;
+  width: 100%;
   text-align: center;
   padding: 10px;
 }
@@ -325,7 +326,7 @@ footer{
 .media i{
   color: aliceblue;
   padding: 0 10px;
-  font-size: 30px
+  font-size: 30px;
 }
 
 .avanzamento{
@@ -334,6 +335,7 @@ footer{
 }
 
 .avanzamento div span{
+  padding: 0 5px;
   font-size: small;
   color: aliceblue;
 }
@@ -374,11 +376,6 @@ footer{
   width: 255px;
 }
 
-/* @media screen and (max-width:1000px) {
-  .card{
-    width: calc(100% / 4);
-  }
-} */
 
 /************** SEZIONE HOVER*************/
 
@@ -478,3 +475,30 @@ ul li:hover{
 }
 
 /* sezione media query */
+.debug{
+  border: 1px solid red;
+  background-color: orange;
+}
+
+.debug2{
+  border: 1px solid red;
+  background-color: rgb(112, 125, 243);
+}
+
+@media (max-width:1200px) {
+  .card{
+    width: calc(100% / 4);
+  }
+} 
+
+@media (max-width: 1040px) {
+  .pref{
+    display: block;
+    padding: 25px 0;
+  }
+  .play,
+  .status,
+  .sound{
+    width: 33%;
+  }
+}
