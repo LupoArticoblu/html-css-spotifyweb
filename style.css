@@ -192,6 +192,25 @@ header{
 .card .image{
   width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+
+.card .image i{
+  display: none;
+  font-size: 50px;
+  color: aliceblue;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+}
+
+.card:hover i{
+  display: block;
+  font-size: 50px;
+  color: aliceblue;
+  position: absolute;
+  top: 30%;
+  left: 32%;
 }
 
 .card .round{
