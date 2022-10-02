@@ -6,7 +6,7 @@
 
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* font condivisi */
@@ -184,7 +184,6 @@ header{
 
 .card{
   text-align: center;
-  align-items: center;
   padding: 20px;
   min-width: 175px;
   width: calc(100% / 6);
@@ -264,16 +263,15 @@ main{
 
 footer{
   padding: 20px;
-  height: 140px;
+  height: 141px;
   width: 100%;
   z-index: 101;
 }
 
 .foot{
-  min-height: 50%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
 }
 
 .foot .play{
@@ -315,10 +313,13 @@ footer{
   color: aliceblue;
 }
 
+.foot .status{
+    height: 10vh;
+}
+
 .status .media,
 .status .avanzamento{
   height: 50%;
-  width: 100%;
   text-align: center;
   padding: 10px;
 }
@@ -374,6 +375,7 @@ footer{
 
 .sound{
   width: 255px;
+  height: 10vh;
 }
 
 
@@ -475,15 +477,6 @@ ul li:hover{
 }
 
 /* sezione media query */
-.debug{
-  border: 1px solid red;
-  background-color: orange;
-}
-
-.debug2{
-  border: 1px solid red;
-  background-color: rgb(112, 125, 243);
-}
 
 @media (max-width:1200px) {
   .card{
@@ -499,6 +492,10 @@ ul li:hover{
   .play,
   .status,
   .sound{
-    width: 33%;
+    width: calc(100% / 3);
   }
 }
+
+
+/* !!!PROBLEMI COL FOOTER IN RESPONSIVE!!! */
+/* !!!PROBLEMI CON L'ASIDE IN RESPONSIVE!!! */
